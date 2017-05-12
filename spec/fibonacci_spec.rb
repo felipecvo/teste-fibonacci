@@ -15,26 +15,26 @@ RSpec.describe Fibonacci do
   end
 
   context 'three elements sequence' do
-    xit 'returns [1, 1, 2]' do
+    it 'returns [1, 1, 2]' do
       expect(Fibonacci.seq(3)).to eq [1, 1, 2]
     end
   end
 
   context 'four elements sequence' do
-    xit 'returns [1, 1, 2, 3]' do
+    it 'returns [1, 1, 2, 3]' do
       expect(Fibonacci.seq(4)).to eq [1, 1, 2, 3]
     end
   end
 
   context 'five elements sequence' do
-    xit 'returns [1, 1, 2, 3, 5]' do
+    it 'returns [1, 1, 2, 3, 5]' do
       expect(Fibonacci.seq(5)).to eq [1, 1, 2, 3, 5]
     end
   end
 
   context 'twenty elements sequence' do
-    xit 'returns [1, 1, 2, 3, 5, ..., ]' do
-      expect(Fibonacci.seq(5).last).to eq 6760
+    it 'returns [1, 1, 2, 3, 5, ..., ]' do
+      expect(Fibonacci.seq(20).last).to eq 6765
     end
   end
 end
